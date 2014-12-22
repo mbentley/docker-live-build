@@ -5,7 +5,6 @@ RUN apt-get update
 
 RUN (DEBIAN_FRONTEND=noninteractive apt-get install -y git live-build &&\
 	mkdir /opt/live)
-ADD run.sh /usr/local/bin/run
 
 WORKDIR /opt/live
 
