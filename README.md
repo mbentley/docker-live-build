@@ -8,7 +8,7 @@ To pull this image:
 `docker pull mbentley/live-build`
 
 Start the docker image with bash in `/opt/live`:
-`docker run -it -v /data/live-build:/opt/live mbentley/live-build`
+`docker run -it --privileged --rm -v /data/live-build:/opt/live mbentley/live-build`
 
 By default, this image forwards drops you into a bash shell to run `live-build`
 
